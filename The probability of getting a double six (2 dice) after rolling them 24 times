@@ -1,0 +1,16 @@
+def probability_double_six_in_24_rolls():
+    # Probability of not getting a double six in one roll
+    prob_not_double_six = 35 / 36
+    
+    # Probability of not getting a double six in 24 rolls
+    prob_not_double_six_24_rolls = prob_not_double_six ** 24
+    
+    # Probability of getting at least one double six in 24 rolls
+    prob_at_least_one_double_six = 1 - prob_not_double_six_24_rolls
+    
+    return prob_at_least_one_double_six
+
+# Calculate the probability
+probability = probability_double_six_in_24_rolls()
+
+print(f"The probability of getting at least one double six in 24 rolls is: {probability:.4f}")
